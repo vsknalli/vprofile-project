@@ -20,7 +20,7 @@ Below steps are for installing jenkins on Centos/7
 
 #!/bin/bash
 sudo yum update -y
-sudo yum install java-1.8.0-openjdk-devel
+sudo yum install java-1.8.0-openjdk-devel -y
 sudo yum install maven -y
 curl --silent --location http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo | sudo tee /etc/yum.repos.d/jenkins.repo > /dev/null
 sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
